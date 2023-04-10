@@ -1,0 +1,31 @@
+.title{
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  height: 50px;
+}
+
+.ppal{
+    background-color: #C5BEBC;
+    padding: 20px;
+}
+
+.ppal h2{
+  text-align: center;
+}
+
+.dif{
+  text-align: left;
+  background-color: white;
+  padding: 20px;
+}
+
+.dif h2{
+  text-align: center;
+}
+
+.dif .item{
+  font-style: italic;
+}
