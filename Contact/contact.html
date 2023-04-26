@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="imagenes/logo.png" alt="logo_baber"></h1>
+        <nav>
+          <ul>
+              <li><a href="../home/index.html">Home</a></li>
+              <li><a href="../productos/productos.html">Productos</a></li>
+              <li><a href="../Contact/contact.html">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form method="post">
+        <label for="nombreyapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreyapellido" class="contact" required
+
+        <label for="email">Correo electronico</label>
+        <input type="email" id="email" class="contact" required placeholder="correo@correo.com">
+
+        <label for="telefono">Telefono</label>
+        <input type="telefono" id="telefono" class="contact" required>
+
+        <label for="msje">Observaciones</label>
+        <textarea rows="10" cols="40" id="msje"></textarea>
+
+        <fieldset class="contacto">
+          <legend id="cont">¿Cómo desea ser contactado?</legend>
+            <label for="email-radio"><input type="radio" id="email-radio" value="wmail" name="contacto">Email</label>
+
+            <label for="tel-radio"><input type="radio" id="tel-radio" value="wmail" name="contacto">Telefono</label>
+
+            <label for="wpp-radio"><input type="radio" id="wpp-radio" value="wmail" name="contacto" checked>WhatsApp</label>
+        </fieldset>
+
+          <fieldset class="drop-down">
+            <legend id="cita">¿En que hoario desea su cita?</legend>
+              <select>
+                <option>Manana</option>
+                <option>Tarde</option>
+                <option>Noche</option>
+              </select>
+          </fieldset>
+
+          <label class="checkbox"><input type="checkbox" required>¿Desea recibir información de la barberia Alura?</label>
+
+          <input type="submit" value="Enviar" class="submit_btn">
+      </form>
+
+      <table class="schedule">
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>08h - 20h</td>
+          </tr>
+          <tr>
+            <td>Miercoles</td>
+            <td>08h - 20h</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>08h - 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img src="imagenes/logo-blanco.png" alt="img_footer">
+      <p class="copyright">&copy Copyright Barberia Alura -2020</p>
+    </footer>
+  </body>
+</html>
